@@ -2,15 +2,15 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>LunarScents&#39;s DevLog</title>
+<title>Tag: Problem Solving - LunarScents&#39;s DevLog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<link rel="canonical" href="https://lunarscents.github.io/">
+<link rel="canonical" href="https://lunarscents.github.io/tags/problem-solving/">
 
     <meta name="description" content="The logging space of LunarScents.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="LunarScents&#39;s DevLog">
-<meta property="og:url" content="https://lunarscents.github.io/index.html">
+<meta property="og:url" content="https://lunarscents.github.io/tags/Problem-Solving/index.html">
 <meta property="og:site_name" content="LunarScents&#39;s DevLog">
 <meta property="og:description" content="The logging space of LunarScents.">
 <meta property="og:locale" content="en">
@@ -109,7 +109,7 @@
             
             <div class="navbar-start">
                 
-                <a class="navbar-item is-active" href="/">Home</a>
+                <a class="navbar-item" href="/">Home</a>
                 
                 <a class="navbar-item" href="/archives">Archives</a>
                 
@@ -142,7 +142,17 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main">
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    <div class="card-content">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/tags">Tags</a></li>
+            <li class="is-active"><a href="#" aria-current="page">Problem Solving</a></li>
+        </ul>
+        </nav>
+    </div>
+</div>
+
     <div class="card">
     
     <div class="card-image">
@@ -430,65 +440,6 @@
     <div class="card">
     
     <div class="card-image">
-        <a href="/2019/10/05/joystick/" class="image is-7by1">
-            <img class="thumbnail" src="/images/programmers.png" alt="조이스틱">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-10-04T17:00:00.000Z">2019-10-05</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/Programmers/">Programmers</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/Programmers/Level2/">Level2</a>
-                </div>
-                
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2019/10/05/joystick/">조이스틱</a>
-            
-        </h1>
-        <div class="content">
-            <h2 id="문제-설명"><a href="#문제-설명" class="headerlink" title="문제 설명"></a>문제 설명</h2><p>조이스틱으로 알파벳 이름을 완성하세요. 맨 처음엔 A로만 이루어져 있습니다.<br>ex) 완성해야 하는 이름이 세 글자면 AAA, 네 글자면 AAAA</p>
-<p>조이스틱을 각 방향으로 움직이면 아래와 같습니다.</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">▲ - 다음 알파벳</span><br><span class="line">▼ - 이전 알파벳 (A에서 아래쪽으로 이동하면 Z로)</span><br><span class="line">◀ - 커서를 왼쪽으로 이동 (첫 번째 위치에서 왼쪽으로 이동하면 마지막 문자에 커서)</span><br><span class="line">▶ - 커서를 오른쪽으로 이동</span><br></pre></td></tr></table></figure>
-
-<p>예를 들어 아래의 방법으로 “JAZ”를 만들 수 있습니다.</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- 첫 번째 위치에서 조이스틱을 위로 9번 조작하여 J를 완성합니다.</span><br><span class="line">- 조이스틱을 왼쪽으로 1번 조작하여 커서를 마지막 문자 위치로 이동시킵니다.</span><br><span class="line">- 마지막 위치에서 조이스틱을 아래로 1번 조작하여 Z를 완성합니다.</span><br><span class="line">따라서 11번 이동시켜 &quot;JAZ&quot;를 만들 수 있고, 이때가 최소 이동입니다.</span><br></pre></td></tr></table></figure>
-
-<p>만들고자 하는 이름 name이 매개변수로 주어질 때, 이름에 대해 조이스틱 조작 횟수의 최솟값을 return 하도록 solution 함수를 만드세요.</p>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2019/10/05/joystick/#more">Read More</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
         <a href="/2019/10/05/halloweenSale/" class="image is-7by1">
             <img class="thumbnail" src="/images/hackerrank.jpeg" alt="Halloween Sale">
         </a>
@@ -707,25 +658,79 @@
 
 
 
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/2019/10/01/modifiedKaprekarNumbers/" class="image is-7by1">
+            <img class="thumbnail" src="/images/hackerrank.jpeg" alt="Modified Kaprekar Numbers">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-10-01T00:30:00.000Z">2019-10-01</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Algorithm/">Algorithm</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/HackerRank/">HackerRank</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/Algorithm/HackerRank/Problem-Solving/">Problem Solving</a>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/10/01/modifiedKaprekarNumbers/">Modified Kaprekar Numbers</a>
+            
+        </h1>
+        <div class="content">
+            <p>A modified Kaprekar number is a positive whole number with a special property. If you square it, then split the number into two integers and sum those integers, you have the same value you started with.</p>
+<p>Consider a positive whole number <strong>n</strong> with <strong>d</strong> digits. We square <strong>n</strong> to arrive at a number that is either <strong>2 x d</strong> digits long or <strong>(2 x d) - 1</strong> digits long. Split the string representation of the square into two parts, <strong>l</strong> and <strong>r</strong>. The right hand part, <strong>r</strong> must be <strong>d</strong> digits long. The left is the remaining substring. Convert those two substrings back to integers, add them and see if you get <strong>n</strong>.</p>
+<p>For example, if <strong>n = 5</strong>, <strong>d = 1</strong> then <strong>n<sup>2</sup> = 25</strong>. We split that into two strings and convert them back to integers <strong>2</strong> and <strong>5</strong>. We test <img src="https://latex.codecogs.com/gif.latex?2&space;+&space;5&space;=&space;7&space;%5Cneq&space;5" alt>, so this is not a modified Kaprekar number. If <strong>n = 9</strong>, still <strong>d = 1</strong>, and <strong>n<sup>2</sup> = 81</strong>. This gives us <strong>1 + 8 = 9</strong>, the original <strong>n</strong>.</p>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/10/01/modifiedKaprekarNumbers/#more">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
 
     
 <div class="card card-transparent">
     <nav class="pagination is-centered" role="navigation" aria-label="pagination">
         <div class="pagination-previous is-invisible is-hidden-mobile">
-            <a class="is-flex-grow has-text-black-ter" href="/page/0/">Previous</a>
+            <a class="is-flex-grow has-text-black-ter" href="/tags/Problem-Solving/page/0/">Previous</a>
         </div>
         <div class="pagination-next">
-            <a class="is-flex-grow has-text-black-ter" href="/page/2/">Next</a>
+            <a class="is-flex-grow has-text-black-ter" href="/tags/Problem-Solving/page/2/">Next</a>
         </div>
         <ul class="pagination-list is-hidden-mobile">
             
-            <li><a class="pagination-link is-current" href="/">1</a></li>
+            <li><a class="pagination-link is-current" href="/tags/Problem-Solving/">1</a></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/page/2/">2</a></li>
+            <li><a class="pagination-link has-text-black-ter" href="/tags/Problem-Solving/page/2/">2</a></li>
             
             <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/page/17/">17</a></li>
+            <li><a class="pagination-link has-text-black-ter" href="/tags/Problem-Solving/page/7/">7</a></li>
             
         </ul>
     </nav>
